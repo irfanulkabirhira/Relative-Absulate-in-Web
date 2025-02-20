@@ -10,7 +10,18 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Font Awesum -->
     <script src="https://kit.fontawesome.com/9c36c5aea5.js" crossorigin="anonymous"></script>
-    <title>ALl Absulate and Relative </title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+    <!--Google font Playwirte AR  -->
+    <style>
+        .playwrite-ar{
+            font-family: "Playwrite AR", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <!-- Relative and Absulate Design 1  -->
@@ -71,8 +82,35 @@
           </div>
         </div>
       </section>
+
+
       <!-- Relative and Absulate Design 2 -->
-       
+      <section class="flex flex-col lg:flex-row p-5 mx-3 bg-black my-15">
+        <div class="lg:space-x-40 lg:mr-16 lg:my-10 my-2">
+          <h1 class="font-bold text-white lg:text-6xl text-5xl ">Get body in<br/>
+            <span class="font-[playwrite-ar]"><i class="lg:text-6xl text-5xl text-white "> shape </i></span>& stay<br/>healthy
+          </h1>
+          <p class="lg:text-xl text-xl text-[#FFFFFF80] lg:my-11 my-4">
+            A huge selection of health and fitness content,healthy recipes<br/>and transformation stories to help you get fit and stay fit!</p>
+          <button class="bg-red-500 lg:w-64 w-32 lg:p-4 font-bold rounded-full lg:text-2xl text-xl p-2 text-gray-50 mx-2">Join Club Now!</button>
+          <button class="border border-white lg:w-64 w-32 lg:p-4 font-bold rounded-full lg:text-2xl text-xl p-2 text-gray-50">Download App</button>
+        </div>
+        <div class="relative lg:mx-11 lg:w-[375px] lg:h-[650px]">
+          <div><img src="./assets/hero section.png" alt="" /></div>
+          <div class="bg-[#857f783d] p-4 rounded-lg w-44 absolute top-45 lg:-right-20 -right-2">
+            <h1 class="text-white font-bold text-3xl text-center">500+</h1>
+            <p class="text-[#FFFFFFA6] text-xs text-center">Free Workout Videos</p>
+          </div>
+          <div class="flex justify-center bg-[#857f783d] p-4 rounded-lg w-48 absolute lg:bottom-40 lg:-left-35 bottom-20 -left-5">
+            <div class="w-6 h-6 bg-red-600 rounded-full my-4"></div>
+            <div class="mx-1">
+              <h1 class="text-white font-bold text-2xl">350+</h1>
+              <p class="text-[#FFFFFFA6] text-xs">Video tutorial</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 </body>
 </html>
